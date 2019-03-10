@@ -14,7 +14,7 @@ y= dataset.iloc[:, 4].values   #Extracting the Lables from the dataset
 
                
 #Splitting the dataset into train and test data
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)
 
    
